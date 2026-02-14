@@ -1,0 +1,11 @@
+# SimpleBackup - Requirements
+# No external Python dependencies required!
+# 
+# System requirements:
+# - Python 3.6+
+# - mysqldump (for MySQL/MariaDB backups)
+# - pg_dump (for PostgreSQL backups)
+#
+# Optional for advanced features:
+# - GPG for encryption
+# - rsync for remote backups

@@ -1,0 +1,43 @@
+{
+    "backup_dir": "./backups",
+    "retention_days": 7,
+    "compression": "gz",
+    "websites": [
+        {
+            "name": "mon_site_wordpress",
+            "path": "/var/www/html/wordpress",
+            "enabled": true
+        },
+        {
+            "name": "mon_site_ecommerce",
+            "path": "/var/www/html/boutique",
+            "enabled": true
+        }
+    ],
+    "databases": [
+        {
+            "name": "wordpress_db",
+            "type": "mysql",
+            "host": "localhost",
+            "port": 3306,
+            "user": "backup_user",
+            "password": "votre_mot_de_passe_securise",
+            "database": "wordpress_prod",
+            "enabled": true
+        },
+        {
+            "name": "ecommerce_db",
+            "type": "postgresql",
+            "host": "localhost",
+            "port": 5432,
+            "user": "backup_user",
+            "password": "votre_mot_de_passe_securise",
+            "database": "ecommerce_prod",
+            "enabled": true
+        }
+    ],
+    "notifications": {
+        "enabled": false,
+        "email": "admin@example.com"
+    }
+}
